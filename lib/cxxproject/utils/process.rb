@@ -25,8 +25,8 @@ module Cxxproject
       rd.close
 
       # seems that pipe cannot handle non-ascii characters right on windows (even with correct encoding)
-      consoleOutput.gsub!(/\xE2\x80\x98/,"`")
-      consoleOutput.gsub!(/\xE2\x80\x99/,"'")
+      # consoleOutput.gsub!(/\xE2\x80\x98/,"`")
+      # consoleOutput.gsub!(/\xE2\x80\x99/,"'")
 
       consoleOutput
     end
